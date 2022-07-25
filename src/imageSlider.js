@@ -17,12 +17,12 @@ function slideImages(container) {
   };
 
   const slideRight = () => {
-    slidePos += 800;
+    slidePos += imgWidth;
     shiftSlides(slidePos);
   };
 
   const slideLeft = () => {
-    slidePos -= 800;
+    slidePos -= imgWidth;
     shiftSlides(slidePos);
   };
 

@@ -75,11 +75,18 @@ $tran-duration: 1s;
 }
 
 @media (max-width: 500px) {
-    $image-width: 300px;
+    $image-width: 200px;
     .image-frame {
         max-width: $image-width;
     }
     .slider-img {
         width: $image-width;
+    }
+    .next-btn,
+    .prev-btn {
+        font-size: 12px;
+    }
+    .image-ui-container {
+        gap: 12px;
     }
 }
