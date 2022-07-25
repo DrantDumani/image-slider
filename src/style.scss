@@ -21,6 +21,11 @@ body {
     background-color: #ffc894;
 }
 
+.next-btn:hover,
+.prev-btn:hover {
+    background-color: #ffeddc;
+}
+
 .image-ui-container {
     display: flex;
     align-items: center;
@@ -67,4 +72,14 @@ $tran-duration: 1s;
 
 .selected {
     background-color: #191919;
+}
+
+@media (max-width: 500px) {
+    $image-width: 300px;
+    .image-frame {
+        max-width: $image-width;
+    }
+    .slider-img {
+        width: $image-width;
+    }
 }
