@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "MMZX";
+    src: url("./fonts/Mega-Man-ZX.ttf") format("truetype");
+}
+
+body {
+    font-family: "MMZX";
+    margin: 0;
+    padding: 12px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.next-btn,
+.prev-btn {
+    font-family: inherit;
+    font-size: 22px;
+    background-color: #ffc894;
+}
+
+.image-ui-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+$image-width: 800px;
+.image-frame {
+    border: 1px solid #000;
+    max-width: $image-width;
+    overflow-x: hidden;
+}
+
+$tran-duration: 1s;
+.slide-container {
+    width: max-content;
+    display: flex;
+    position: relative;
+    right: 0;
+    transition-property: left, right, opacity;
+    transition-duration: $tran-duration;
+}
+
+.slider-img {
+    object-fit: contain;
+    width: $image-width;
+    height: auto;
+}
+
+.img-navigation {
+    display: flex;
+    gap: 16px;
+}
+
+.img-nav-button {
+    $circle-rad: 30px;
+    width: $circle-rad;
+    height: $circle-rad;
+    background: #696969;
+    border-radius: 50%;
+    border: none;
+    transition: background-color $tran-duration;
+}
+
+.selected {
+    background-color: #191919;
+}
